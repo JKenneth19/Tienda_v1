@@ -17,4 +17,10 @@ public interface ProductoService {
     
     // Se elimina el producto que tiene el id pasado por parámetro    
     public void delete(Producto producto);
+    
+    //nustro primer filtro para la pagina 
+    public List<Producto> findByPrecioBetweenOrderByDescripcion(double precioInf,double precioSup);
+    
+    public List<Producto> metodoJPQL(double precioInf,double precioSup);
+
 }
